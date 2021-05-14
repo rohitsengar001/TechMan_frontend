@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "TechManFrontend"
+    }
+  },
+  "defaultProject": "TechManFrontend",
+  "cli": {
+    "analytics": "1b69448d-7f5b-4f1a-a095-603d26b25656"
+  }
 }
