@@ -1,0 +1,46 @@
+.container-fluid{
+    background-color: white;
+    height: 800px;
+}
+.career-top-content{
+    text-align: center;
+    padding-top: 85px;
+    font-size: 4rem;
+    font-weight: 700 !important;
+    font-family: DM Sans;
+    
+}
+.inner-content-p{
+    padding-top: 22px;
+    text-align: center;
+    font-family: DM Sans;
+    font-weight: 600;
+    font-size: x-large;
+}
+.inner-content{
+    font-weight: 300;
+  
+}
+
+.career-col{
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 40px;
+    padding-top: 70px;
+}
+.career-h5{
+    
+    padding-top: 25px;
+    font-family: DM Sans;
+    font-weight: 700;
+    color: teal;
+}
+.career-p{
+    padding-top: 25px;
+    font-family: DM Sans;
+    font-weight: 300;
+}
