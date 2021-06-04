@@ -1,0 +1,19 @@
+.login-section{
+    height: 550px;
+    width: 1124px;
+    background-color: whitesmoke;
+    box-shadow: 2px 2px 27px 0px rgb(1 3 4 / 35%);
+    margin-top: 50px;
+    border-radius: 5px;
+}
+
+.col-section{
+    height: 464px;
+    width: 500px;
+    background-color: bisque;
+    box-shadow: 6px 2px 43px 0px rgb(1 3 4 / 66%);
+    margin-top: 44px;
+    margin-left: 321px;
+    border-radius: 10px;
+}
+

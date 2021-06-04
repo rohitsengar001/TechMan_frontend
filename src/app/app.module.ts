@@ -8,6 +8,11 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { CareerComponent } from './career/career.component';
+import { LoginPageComponent } from './login-page/login-page.component';
+import { HeaderChipsComponent } from './header-chips/header-chips.component';
+import { OurMissionComponent } from './our-mission/our-mission.component';
+import { BlogsComponent } from './blogs/blogs.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +20,12 @@ import { CareerComponent } from './career/career.component';
     NavbarComponent,
     CarouselComponent,
     AboutUsComponent,
-    CareerComponent
+    CareerComponent,
+    LoginPageComponent,
+    HeaderChipsComponent,
+    OurMissionComponent,
+    BlogsComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
