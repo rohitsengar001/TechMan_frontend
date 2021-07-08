@@ -13,9 +13,11 @@ import { HeaderChipsComponent } from './header-chips/header-chips.component';
 import { OurMissionComponent } from './our-mission/our-mission.component';
 import { BlogsComponent } from './blogs/blogs.component';
 import { FooterComponent } from './footer/footer.component';
+import { LayoutComponent } from './layout/layout.component';
+import { ContactusComponent } from './contactus/contactus.component';
 
 @NgModule({
-  declarations: [
+  declarations: [		
     AppComponent,
     NavbarComponent,
     CarouselComponent,
@@ -25,8 +27,10 @@ import { FooterComponent } from './footer/footer.component';
     HeaderChipsComponent,
     OurMissionComponent,
     BlogsComponent,
-    FooterComponent
-  ],
+    FooterComponent,
+      LayoutComponent,
+      ContactusComponent
+   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
