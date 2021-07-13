@@ -1,0 +1,42 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "contact": [
+    {
+      "id": 1
+    },
+    {
+      "name": "ROHIT",
+      "email": "rohitsengar001@gmail.com",
+      "message": "hi",
+      "id": 2
+    },
+    {
+      "name": "ROHIT",
+      "email": "rohitsengar001@gmail.com",
+      "message": "success",
+      "id": 3
+    },
+    {
+      "name": "ROHIT",
+      "email": "rohitsengar001@gmail.com",
+      "message": "flagmessage",
+      "id": 4
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
