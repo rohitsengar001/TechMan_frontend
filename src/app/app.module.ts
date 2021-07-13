@@ -15,9 +15,12 @@ import { BlogsComponent } from './blogs/blogs.component';
 import { FooterComponent } from './footer/footer.component';
 import { LayoutComponent } from './layout/layout.component';
 import { ContactusComponent } from './contactus/contactus.component';
-
+import { FaqComponent } from './faq/faq.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 @NgModule({
-  declarations: [		
+  declarations: [
     AppComponent,
     NavbarComponent,
     CarouselComponent,
@@ -28,12 +31,16 @@ import { ContactusComponent } from './contactus/contactus.component';
     OurMissionComponent,
     BlogsComponent,
     FooterComponent,
-      LayoutComponent,
-      ContactusComponent
-   ],
+    LayoutComponent,
+    ContactusComponent,
+    FaqComponent
+  ],
   imports: [
     BrowserModule,
+    CommonModule,
     AppRoutingModule,
+    HttpClientModule,
+    ReactiveFormsModule
     // NgbModule
   ],
   providers: [],

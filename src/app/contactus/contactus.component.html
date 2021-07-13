@@ -5,36 +5,36 @@
         <h1 class="u-text u-text-1">Contact Us</h1>
         <div
           class="u-align-left u-expanded-width-lg u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-form u-form-1">
-          <form action="https://nicepage.com/editor/Forms/Process" method="POST"
-            class="u-clearfix u-form-spacing-28 u-form-vertical u-inner-form" style="padding: 10px" source="email"
-            name="form">
+          <form [formGroup]="contactForm" (ngSubmit)="sendMessage()"
+            class="u-clearfix u-form-spacing-28 u-form-vertical u-inner-form" style="padding: 10px">
             <input type="hidden" id="siteId" name="siteId" value="399563" wfd-invisible="true">
             <input type="hidden" id="pageId" name="pageId" value="399565" wfd-invisible="true">
             <div class="u-form-group u-form-name u-form-group-1">
               <label for="name-5a14" class="u-form-control-hidden u-label" wfd-invisible="true">Name</label>
               <input type="text" placeholder="Enter your Name" id="name-5a14" name="name"
-                class="u-input u-input-rectangle u-white" required="">
+                class="u-input u-input-rectangle u-white" formControlName="name">
+              <div class="text-danger" *ngIf="name.invalid && (name.dirty || name.touched)">name is required*</div>
             </div>
             <div class="u-form-email u-form-group u-form-group-2">
               <label for="email-5a14" class="u-form-control-hidden u-label" wfd-invisible="true">Email</label>
               <input type="email" placeholder="Enter a valid email address" id="email-5a14" name="email"
-                class="u-input u-input-rectangle u-white" required="">
+                class="u-input u-input-rectangle u-white" formControlName="email">
+              <div class="text-danger" *ngIf="email.invalid && (email.dirty || email.touched)">enter valid email
+                required*</div>
             </div>
             <div class="u-form-group u-form-message u-form-group-3">
               <label for="message-5a14" class="u-form-control-hidden u-label" wfd-invisible="true">Message</label>
               <textarea placeholder="" rows="4" cols="50" id="message-5a14" name="message"
-                class="u-input u-input-rectangle u-white" required=""></textarea>
+                class="u-input u-input-rectangle u-white" formControlName="message"></textarea>
+              <div class="text-danger" *ngIf="message.invalid && (message.dirty || message.touched)">message is
+                required*</div>
             </div>
             <div class="u-align-center u-form-group u-form-submit u-form-group-4">
-              <a href="#"
-                class="u-border-2 u-border-black u-btn u-btn-submit u-button-style u-hover-black u-none u-text-black u-text-hover-white u-btn-1">Submit</a>
-              <input type="submit" value="submit" class="u-form-control-hidden" wfd-invisible="true">
+              <input type="submit" class="btn btn-outline-secondary" value="submit" [disabled]="contactForm.invalid">
+              <div *ngIf="flagMessage"> Thank you! Your message has
+                been sent.
+              </div>
             </div>
-            <div class="u-form-send-message u-form-send-success" wfd-invisible="true"> Thank you! Your message has
-              been sent. </div>
-            <div class="u-form-send-error u-form-send-message" wfd-invisible="true"> Unable to send your message.
-              Please fix errors then try again. </div>
-            <input type="hidden" value="" name="recaptchaResponse" wfd-invisible="true">
           </form>
         </div>
       </div>
@@ -135,7 +135,7 @@ s2.686-6,6-6s6,2.686,6,6S29.491,24,26.177,24z"></path>
             <h5 class="u-text u-text-8">Email</h5>
             <p class="u-text u-text-9">
               <a href="mailto:hello@theme.com"
-                class="u-active-none u-border-1 u-border-palette-2-base u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-2-base u-btn-2">hello@theme.com</a>
+                class="u-active-none u-border-1 u-border-palette-2-base u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-2-base u-btn-2 mx-2">hello@theme.com</a>
             </p>
           </div>
         </div>
