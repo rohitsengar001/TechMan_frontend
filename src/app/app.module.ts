@@ -19,6 +19,10 @@ import { FaqComponent } from './faq/faq.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { ViewBlogComponent } from './blogs/viewBlog/viewBlog.component';
+import { HomeBlogComponent } from './blogs/homeBlog/homeBlog.component';
+import { BlogsModule } from './blogs/blogs.module';
+import { DisqusModule, DisqusService } from 'ngx-disqus';
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,17 +37,19 @@ import { CommonModule } from '@angular/common';
     FooterComponent,
     LayoutComponent,
     ContactusComponent,
-    FaqComponent
+    FaqComponent,
+
+    
   ],
   imports: [
     BrowserModule,
     CommonModule,
     AppRoutingModule,
     HttpClientModule,
-    ReactiveFormsModule
-    // NgbModule
+    ReactiveFormsModule,
+    BlogsModule,
   ],
-  providers: [],
+  providers: [DisqusService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  url:"http://localhost:3000/contact"
+  url:"http://localhost:3000/contact",
+  blogUrl:"http://localhost:8080/project/api"
 };
 
 /*
