@@ -22,10 +22,7 @@ export class HomeBlogComponent implements OnInit {
     )
   }
   setData(data){
-    this.obj=JSON.stringify(data);
     this.router.navigateByUrl('/view',{state:data});
-
-    console.log(this.obj);
   }
 
 }
