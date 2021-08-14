@@ -123,6 +123,10 @@
   },
   "defaultProject": "TechManFrontend",
   "cli": {
+<<<<<<< HEAD
     "analytics": "1b69448d-7f5b-4f1a-a095-603d26b25656"
+=======
+    "analytics": false
+>>>>>>> afaad6ed2e910e96bcf62f1318f345aabc156682
   }
 }
